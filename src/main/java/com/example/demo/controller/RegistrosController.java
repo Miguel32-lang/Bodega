@@ -36,6 +36,11 @@ public class RegistrosController {
 	public String prueba() {
 		return "funciona";
 	}
+
+	@GetMapping("ultimo")
+    public Sensores obtenerUltimoProducto() {
+        return sensoresRepository.findTopByOrderByIdDesc();
+    }
 	
 	
 }
