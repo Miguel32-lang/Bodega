@@ -37,10 +37,6 @@ public class RegistrosController {
 		return "funciona";
 	}
 
-	@GetMapping("ultimo")
-    public Registros obtenerUltimoProducto() {
-        return registrosRepository.findTopByOrderByIdDesc();
-    }
 	
 	
 }
