@@ -38,8 +38,8 @@ public class RegistrosController {
 	}
 
 	@GetMapping("ultimo")
-    public Sensores obtenerUltimoProducto() {
-        return sensoresRepository.findTopByOrderByIdDesc();
+    public Registros obtenerUltimoProducto() {
+        return registrosRepository.findTopByOrderByIdDesc();
     }
 	
 	
