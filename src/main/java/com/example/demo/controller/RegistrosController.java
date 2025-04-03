@@ -31,4 +31,11 @@ public class RegistrosController {
 	public List<Registros> listar() {
 		return registrosRepository.findAll();
 	}
+	
+	@GetMapping("prueba")
+	public String prueba() {
+		return "funciona";
+	}
+	
+	
 }
